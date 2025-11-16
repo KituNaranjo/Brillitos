@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para ti 💖</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background: #ffe6f2;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        h1 {
+            color: #d63384;
+            font-size: 2.5rem;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.2rem;
+        }
+
+        #botonAmor {
+            background-color: #ff4d88;
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        #botonAmor:hover {
+            background-color: #ff1a66;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Para mi novia hermosa 💖</h1>
+    <p>Cada vez que presiones este botón, son los besos que te voy a dar 😘😘😘😘😘</p>
+
+    <button id="botonAmor">Tócame 💗</button>
+
+    <script>
+        const boton = document.getElementById("botonAmor");
+        let size = 20;
+
+        boton.addEventListener("click", () => {
+            size += 10; // Aumenta el tamaño cada click
+            boton.style.padding = `${size}px ${size * 2}px`;
+            boton.style.fontSize = `${size / 2}px`;
+        });
+    </script>
+
+</body>
+</html>
